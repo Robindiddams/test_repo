@@ -1,7 +1,5 @@
 package recognizableSourceCode
 
-import "fmt"
-
 // PrintNames will print the names
 func PrintNames() {
 	names := []string{
@@ -12,7 +10,16 @@ func PrintNames() {
 		"piper",
 		"wren",
 	}
-	for i, name := range names {
-		fmt.Println(name, i)
+	PrintArray(names)
+}
+
+func PrintFruit() {
+	fruit := []string{
+		"apple",
+		"pear",
+		"banana",
+		"mango",
+		"grape",
 	}
+	PrintArray(fruit)
 }
