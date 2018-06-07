@@ -2,6 +2,7 @@ package recognizableSourceCode
 
 import "fmt"
 
+// PrintNames will print the names
 func PrintNames() {
 	names := []string{
 		"jack",
@@ -11,5 +12,7 @@ func PrintNames() {
 		"piper",
 		"wren",
 	}
-	fmt.Println(names)
+	for i, name := range names {
+		fmt.Println(name, i)
+	}
 }
